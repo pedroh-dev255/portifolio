@@ -1,0 +1,100 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  background-color: #121212;
+}
+
+.navbar {
+  background-color: transparent !important;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+  background-color: #007bff !important;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #fff !important;
+}
+
+/* Estilização dos links da navbar */
+.navbar-nav .nav-link {
+  padding-right: 20px;
+}
+
+.container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Certifica-se de que o container ocupa toda a altura da seção */
+}
+
+.container-center h1 {
+  font-weight: bold;
+}
+
+.container-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding: 30px;
+}
+
+.container-sub h1 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.container-sub h2 {
+  font-size: 20px;
+}
+
+/* Estilização da jumbotron */
+.jumbotron {
+  background-color: rgba(0, 123, 255, 0.5);
+  color: #fff;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Estilização das seções */
+section {
+  padding: 50px 0;
+}
+
+section h2 {
+  font-weight: bold;    
+}
+
+/* Estilização das bordas arredondadas */
+.card {
+  border-radius: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+
+/* Estilização do scroll suave */
+#particles-js {
+  position: absolute; /* Position particles absolutely to make the container appear above */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

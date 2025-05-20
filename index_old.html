@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique - Desenvolvedor Back-end</title>
+    <!-- Adicionando o Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="icon" type="image/x-icon" href="https://www.phsolucoes.site/img/unnamed.ico">
+    <link rel="stylesheet" href="styles.css">
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar.scrolled {
+            background-color: #23272b;
+        }
+        .jumbotron {
+            background-size: cover;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jumbotron h1 {
+            font-size: 4rem;
+        }
+        .jumbotron p {
+            font-size: 1.5rem;
+        }
+        .technologies {
+            
+            padding: 50px 0;
+        }
+        .technologies img {
+            max-height: 80px;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+        .technologies img:hover {
+            transform: scale(1.1);
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #343a40;
+            color: #ccc;
+            padding: 20px 0;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Pedro Henrique</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatos">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="jumbotron">
+        <div id="particles-js"></div>
+        <div class="container">
+            <h1 class="display-4">Pedro Henrique</h1>
+            <p class="lead">Desenvolvedor Back-end</p>
+            <a href="#projetos" class="btn btn-primary btn-lg">Veja meus Projetos</a>
+        </div>
+    </section>
+
+    <!-- Seção de Tecnologias -->
+    <section id="tecnologias" class="technologies text-center">
+        <div class="container">
+            <h2>Tecnologias que Domínio</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-2">
+                    <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/nginx_logo_icon_169915.png" alt="Nginx">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://www.2w.eti.br/wp-content/uploads/2017/06/logo-proxmox-1.jpg" alt="PROXMOX">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/linux-logo-design-template-b04c5960543f942cbd64c81280a5a941_screen.jpg?ts=1659251350" alt="LINUX">
+                </div>
+                <div class="col-md-2">
+                    <img src="https://penseemti.com.br/wp-content/uploads/2016/02/windows-server-logo.png" alt="Windows Server">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Projetos -->
+    <section id="projetos" class="container my-5">
+        <h2 class="text-center">Meus Projetos</h2>
+        <div id="projects" class="row">
+            <!-- Os projetos do GitHub serão inseridos aqui -->
+        </div>
+    </section>
+
+    <!-- Seção de Contatos -->
+    <section id="contatos" class="container my-5">
+        <h2 class="text-center">Contato</h2> <br /><br />
+        <form id="contact-form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <p class="text-center mt-4">
+            <a href="mailto:henriquepedro1912@gmail.com">Enviar email diretamente</a>
+        </p>
+        <p class="text-center">
+            <a href="https://wa.me/5563992464215" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2015/08/03/13/58/whatsapp-873316_640.png" alt="WhatsApp" style="width:24px;height:24px;">
+                (63) 99246-4215
+            </a>
+        </p>
+        <p class="text-center">Telefone: +55 63 99246-4215</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <p>&copy; 2024 PH Soluções. Todos os direitos reservados.</p>
+        <p><a href="https://github.com/pedroh-dev255" target="_blank">GitHub</a></p>
+    </footer>
+
+    <!-- Adicionando o jQuery e o Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Adicionando o Particle.js -->
+    <script src="https://www.phsolucoes.site/press-ticket/particles.js-master/particles.js"></script>
+    <script src="https://www.phsolucoes.site/press-ticket/particles.js"></script>
+
+    <!-- Script para pegar projetos do GitHub -->
+    <script>
+        async function fetchGitHubProjects() {
+            const username = 'pedroh-dev255';
+            const response = await fetch(`https://api.github.com/users/${username}/repos`);
+            const projects = await response.json();
+            const projectsContainer = document.getElementById('projects');
+            
+            projects.forEach(project => {
+                const projectElement = document.createElement('div');
+                projectElement.className = 'col-md-4';
+                projectElement.innerHTML = `
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">${project.name}</h5>
+                            <p class="card-text">${project.description || 'Sem descrição'}</p>
+                            <a href="${project.html_url}" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                `;
+                projectsContainer.appendChild(projectElement);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchGitHubProjects);
+
+        // Navbar que muda de cor ao rolar
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+                $('.navbar').addClass('scrolled');
+            } else {
+                $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        // Submissão do formulário de contato
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            window.location.href = `mailto:henriquepedro1912@gmail.com?subject=Contato de ${name}&body=${message} (${email})`;
+        });
+    </script>
+</body>
+
+</html>
